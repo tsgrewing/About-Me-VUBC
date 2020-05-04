@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #333333;
     overflow: auto;
+    font-family: 'Vollkorn SC';
   }
 
 /*Header (same on every page) */
