@@ -1,0 +1,218 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    overflow: auto;
+  }
+
+/*Header (same on every page) */
+header {
+    width: 80%;
+    height: 100px;
+    background-image: repeating-linear-gradient(-45deg, 
+    #890B00 10px, 
+    #800B00 20px);
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    color: #eee;
+    font-size: 32px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+/*Navbar and dropdown homework menu*/
+#navbar {
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: 35%;
+    right: 35%;
+    font-size: 20px;
+    overflow: visible; 
+}
+
+#nav li {
+    display: inline-block;
+
+}
+.navlink {
+
+    display: block;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+#nav {
+    list-style-type: none;
+}
+
+#nav a {
+    background-color: #800B00;
+    color: #eee;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    border:2px groove #333333;
+}
+
+li a {
+  color: #fff;
+}
+
+ul li .dropdown {
+    color: #eee;
+    min-width: 300px;
+    font-weight: bold;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    left: -33%;
+    display: none;
+    overflow: visible;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+  display: block;
+  overflow: visible;
+  justify-content: left;
+}
+
+ul li ul .homeworklink {
+    display: inline-block;
+    padding-top: 8px;
+    margin: 5px 0px 5px 0px;
+    overflow: visible;
+
+
+
+}
+
+/*Contact and social media icons and links */
+#social {
+    display: inline-block;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+#social-links, .navbar ul {
+    list-style-type: none;
+}
+
+#social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icon {
+    height: 29px;
+}
+
+/*central section, where main content will go */
+main {
+    display: inline-block;
+    background-color: #817e7e;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    position: relative;
+    top: 100px;
+}
+
+section{
+    background-color: #817e7e;
+}
+
+#interests h2 {
+    text-decoration: underline double;
+    text-underline-offset: ;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 16px;
+}
+
+/*Bio and info about me*/
+#bio-image {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    border-radius:25px;
+}
+
+#main-bio {
+    float: left;
+    width: 70%;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+
+#interests {
+    border-radius: 25px;
+    border: 3px solid #333333;
+    float: right;
+    width: 20%;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 0 15px 10px 15px;
+}
+
+
+
+/*Game styling and instructions*/
+#instructions {
+    align-self: center;
+    justify-content: center;
+    display: inline-block;
+    border: 2px dashed #800B00;
+    margin-left: 10px;
+    height: 75%; 
+    list-style-type: square;
+    word-wrap: normal;
+    padding: 0 25px 15px 25px;
+    border-radius: 25px;
+}
+
+#instructionsh3 {
+    text-align: center;
+    text-emphasis: bold;
+}
+
+#game {
+    border-radius: 25px;
+    margin-top: 20px;
+}
